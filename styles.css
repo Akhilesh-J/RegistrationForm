@@ -1,0 +1,185 @@
+.setheight {
+    padding: 16px 0;
+    height: 100vh;
+    background-color: palevioletred;
+}
+
+
+.anchor-underline:hover {
+    text-decoration: none;
+}
+
+.bg-blue {
+    background-color: #155084;
+    border-radius: 4px;
+    padding: 32px 16px;
+    max-width: 450px;
+    color: white;
+}
+
+.shadow {
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.3) !important;
+  }
+  
+
+.form-group{
+    display: inline-flex;
+    justify-content: space-evenly;
+    padding: 8px;
+    width: 100%;
+}
+
+
+.form-group label {
+    min-width: 160px;
+    align-self: flex-end;
+    margin: 0; 
+    justify-content: flex-start;
+}
+
+.form-check-label {
+    min-width: 70px !important;
+    font-size: 0.7rem;
+}
+
+.form-group input {
+    border-bottom: 1px solid white;
+    border-radius: 0;
+    padding-left: 0;
+    color: white;
+    outline: none;
+    background-color: transparent !important;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+}
+
+.form-group input::placeholder {
+    color: #dae0e5;
+    font-style: italic;
+    font-size: 0.7rem;
+}
+
+.form-control {
+    background-color: transparent !important;
+}
+
+.form-control:focus {
+    color: white;
+    outline: none;
+    -webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+} 
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: none;
+  border-bottom: 1px solid white;
+  -webkit-text-fill-color: white;
+  box-shadow: 0 0 0px 1000px#ffffff00 inset;
+  -webkit-box-shadow: 0 0 0px 1000px#ffffff00 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.form-control.is-valid:focus, .was-validated .form-control:valid:focus, .form-control.is-invalid:focus, .was-validated .form-control:invalid:focus {
+    border-color: none;
+    box-shadow: none;
+}
+
+
+/* checkbox spacing and resizing */
+.checkbox-container {
+    width: 210px !important;
+    display: flex;
+    font-size: 0.7rem;
+}
+
+.form-check-inline {
+    margin-right: 0;;
+}
+
+.promo-offer, .promo-offer-box {
+    align-items: initial !important;
+}
+
+#offer-check {
+    margin: 4px 0 !important;
+}
+/* select menu custom style for font size and maybe box  */
+.custom-select, .custom-select:hover, .custom-select:focus{
+    border: none;
+    border-bottom: 1px solid white;
+    -webkit-text-fill-color: white;
+    box-shadow: 0 0 0px 1000px#ffffff00 inset;
+    -webkit-box-shadow: 0 0 0px 1000px#ffffff00 inset;
+    transition: background-color 5000s ease-in-out 0s;
+    background-color: transparent;
+    border-radius: 0;
+    font-size: 0.7rem;
+    font-style: italic;
+    width: 186px !important;
+}
+
+.custom-select.is-invalid, .was-validated .custom-select:invalid, .custom-select.is-valid, .was-validated .custom-select:valid {
+    width: 210px !important;
+}
+.custom-select.is-invalid:focus, .was-validated .custom-select:invalid:focus, .custom-select.is-valid:focus, .was-validated .custom-select:valid:focus {
+    box-shadow: none;
+}
+
+/* validataion succeess & error message */
+.invalid-feedback, .valid-feedback {
+    text-align: end;
+}
+
+
+/* submit btn css */
+
+.custom-submit {
+    width: 180px;
+    background-color: white !important;
+    border: none !important;
+    color: #155084 !important;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.3) !important;
+}
+
+.custom-submit:hover {
+    background-color: palevioletred !important;
+    color: white !important;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3) !important;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    border: none;
+    box-shadow: none;
+}
+
+@media (max-width: 575px) {
+    .setheight {
+        height: 100% !important;
+    }
+    .form-group {
+        display: inline;
+    }
+    .checkbox-container {
+        width: auto !important;
+        padding: 16px 0;
+        justify-content: space-between;
+    }
+    .promo-offer{
+    margin: 0 8px !important;
+    padding: 0 6px;
+    }
+    .form-check-label{
+        display: flex;
+        align-items: center;
+    }
+}

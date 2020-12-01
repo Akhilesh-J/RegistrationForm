@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="styles.css">
+
+  <title>GRUNDFOS</title>
+</head>
+<body>
+  <!-- not using section because i want to center the form -->
+    <div class="col-12 d-flex align-items-center setheight">
+      <div class="container-fluid">
+        <div class="card col-md-6 mx-auto my-auto bg-blue shadow">
+          <div class="py-3">
+            <h4 class="text-center">REGISTRATION FORM</h4>
+          </div>
+  
+          <form action="javascript:0" class="form-inline needs-validation" novalidate id="sucs">
+            <div class="form-row w-100">
+              <div class="form-group">   
+                <label for="FirstName">First Name&nbsp;*&nbsp;:</label>
+                <input type="text" class="form-control autocomplete" id="FirstName" placeholder="John" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  Please enter a value.
+                </div>
+              </div>
+            </div>
+              
+  
+            <div class="form-row w-100">
+              <div class="form-group">
+                <label for="LastName">Last Name&nbsp;*&nbsp;:</label>
+                <input type="text" class="form-control autocomplete" id="LastName" placeholder="Doe" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  Please enter a value.
+                </div> 
+              </div>        
+            </div>
+  
+            <div class="form-row w-100">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address&nbsp;*&nbsp;:</label>
+                <input type="email" class="form-control autocomplete" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@example.com" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  Please enter a valid email.
+                </div>
+                <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+              </div>
+            </div>
+  
+            <div class="form-row w-100">
+              <div class="form-group">
+                <label for="Mobilenum">Mobile No&nbsp;*&nbsp;:</label>
+                <input type="tel" class="form-control autocomplete" id="Mobilenum" pattern="^((\+){1}91){1}[7-9]{1}[0-9]{9}" placeholder="+919920447877" required>
+                <!-- pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}" -->
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  Please enter a valid Mobile number as shown in the example.
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-row w-100">
+              <div class="form-group">
+                <label for="company">Company&nbsp;*&nbsp;:</label>
+                <input type="text" class="form-control autocomplete" id="company" minlength="1" maxlength="50" placeholder="Blues & Coppers" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  Please enter a character (range between 1 - 50)
+                </div>
+              </div>
+            </div>
+  
+            <div class="form-row w-100">
+              <div class="form-group">
+                <label for="Designation">Designation&nbsp;*&nbsp;:</label>
+                <input type="text" class="form-control autocomplete" id="Designation" placeholder="Developer" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <div class="invalid-feedback">
+                  Please enter a value.
+                </div>
+              </div>
+            </div>
+  
+            <div class="form-row w-100">
+              <div class="form-group">
+                <label for="aoi">Area Of Interest&nbsp;*&nbsp;:</label>
+                <select class="custom-select aoi" required>
+                  <!-- <option value="" disabled="disabled">Select your Area of Intrest</option> -->
+                  <option value="">Select your Area of Interest</option>
+                  <option value="1">Front-End Developer</option>
+                  <option value="2">Back-End Developer</option>
+                  <option value="3">FullStack Developer</option>
+                </select>
+                <div class="invalid-feedback">Select Area Of Interest</div>
+              </div>
+            </div>
+  
+            <div class="form-row w-100">
+              <div class="form-group">
+                <label for="city">City&nbsp;*&nbsp;:</label>
+                <select class="custom-select city" required>
+                  <option value="">Select Your City</option>
+                  <option value="1">Mumbai</option>
+                  <option value="2">Kyoto</option>
+                  <option value="3">Athens</option>
+                </select>
+                <div class="invalid-feedback">Please select a city</div>
+              </div>
+            </div>
+  
+            <div class="form-row w-100">
+              <div class="form-group">
+                <label for="country">Country&nbsp;*&nbsp;:</label>
+                <select class="custom-select country" required>
+                  <option value=""><span style="font-style: italic;">Select your country</span></option>
+                  <option value="1">India</option>
+                  <option value="2">Japan</option>
+                  <option value="3">Greece</option>
+                </select>
+                <div class="invalid-feedback">Please select a country</div>
+              </div>
+            </div>
+  
+            <div class="form-row w-100">
+              <div class="form-group">
+                <label>Choose Your Dates</label>
+                <div class="checkbox-container">
+                  <div class="form-check-inline">
+                    <label class="form-check-label" for="sixteen">
+                      <input type="checkbox" class="form-check-input" value="" id="sixteen">16th Dec
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <label class="form-check-label" for="seventeen">
+                      <input type="checkbox" class="form-check-input" value="" id="seventeen">17th Dec
+                    </label>
+                  </div>
+                  <div class="form-check-inline">
+                    <label class="form-check-label" for="eightteen">
+                      <input type="checkbox" class="form-check-input" value="" id="eightteen">18th Dec
+                    </label>
+                  </div>
+                </div>
+  
+  
+              </div>
+            </div>
+  
+            <div class="form-row w-100 justify-content-center">
+              <div class="form-group form-check promo-offer-box">
+                <input type="checkbox" class="form-check-input" id="offer-check">
+                <label class="small promo-offer" for="offer-check">
+                  <p class="text-center">I have read the<a href="#" class="anchor-underline">&nbsp;terms&nbsp;</a>and&nbsp;<a href="#" class="anchor-underline">privacy policy</a>&nbsp;and I consent to recieve 
+                    <br>
+                    promotional offer about Grundfos product and services.
+                  </p>
+                </label>
+              </div>
+            </div>
+  
+            <button type="submit" class="btn btn-primary mx-auto custom-submit"  id="mu" data-toggle="modal"  data-target="#msg">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="msgModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-center" id="exampleModalLabel">Thank You!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body text-center">
+              <p>You have successfully registered for the Grundfos Smart Cities | Virtual Event 2020</p>
+              <p>You will shortly receive a confirmation email with login details on your registered email id.</p>
+              <br>
+              <p>For any queries kindly drop in a mail at - grundfosindiaevent@grundfos.com</p>
+              <p>If you are not able to find the email in your Inbox, Kindlt check your Spam folder.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }else{
+          event.preventDefault();
+          $("#msgModal").modal("show");
+          
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+  </script>
+</body>
+</html>
